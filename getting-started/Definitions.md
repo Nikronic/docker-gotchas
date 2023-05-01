@@ -10,7 +10,7 @@ Docker provides tooling and a platform to manage the **lifecycle** of your conta
 
 **Docker’s portability and lightweight** nature also make it easy to dynamically manage workloads, **scaling up or tearing down** applications and services as business needs dictate, in near real time.
 
-Docker Architecture is based on client(`docker`)-server(`dockerd`) model:
+Docker Architecture is based on client(`docker`)-server(`dockerd` or [[weirdge#^385a09|daemon]]) model:
 ![[architecture.svg]]
 *docker architecture*
 
@@ -23,7 +23,7 @@ You might create your own images or you might only use those created by others a
 ## Container
 Simply put, a container is a sandboxed process on your machine that is isolated from all other processes on the host machine. Simply put, a container is a runnable instance of an image. 
 
-## The underlying technology
+## The Underlying Technology
 Docker uses a Linux kernel technology called `namespaces` to provide the isolated workspace called the _container_. When you run a container, Docker creates a set of _namespaces_ for that container.
 
 These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.

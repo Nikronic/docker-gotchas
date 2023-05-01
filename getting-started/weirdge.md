@@ -1,4 +1,4 @@
-Q: How *daemon* is pronunced?
+Q: How *daemon* is pronunced? ^385a09
 >A: DAY-men.
 >
 >Some notes:
