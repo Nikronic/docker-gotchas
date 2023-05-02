@@ -28,3 +28,17 @@ You can use similar commands to creating a `volume` for creating new network, i.
 docker network create network-name # create network
 docker run -d --network network-name --network-alias network-name-alias ...  # connect networ to a container
 ```
+## Docker Compose
+[Docker Compose](https://docs.docker.com/compose/) is a tool that was developed to help define and share multi-container applications. 
+
+>[!INFO] Reproducibility
+>Even though the main point of docker for me is to help the process of DevOps and deployment, being able to use this concept and tool for **making a repo easy to install and use** is an super awesome feature.
+
+With Compose you can define your application stack in a file, keep it at the root of your project repo (it’s now version controlled). Someone would only need to clone your repo and start the compose app.
+
+### Examples
+| CLI single container command | Docker Compose YML |
+| --------------------------------- | ------------------------- |
+| ![[Pasted image 20230502161225.png]] | ![[Pasted image 20230502161300.png]] |
+| ![[Pasted image 20230502161325.png]] | ![[Pasted image 20230502161342.png]] |
+Use `docker compose up` to run it and `docker compose down` to tear it down. It will remove networks and containers but *volumes* will preserve. use `--volumes` to remove volumes.
