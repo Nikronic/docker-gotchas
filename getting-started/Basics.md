@@ -1,3 +1,4 @@
+Everything about the basics is available in the official tutorial [Getting Started with Docker - YouTube](https://www.youtube.com/watch?v=gAGEar5HQoU).
 ## Persist the DB
 | <div style="width:290px"></div> | Named volumes | Bind mounts |
 | :---: | :---: | :---: |
